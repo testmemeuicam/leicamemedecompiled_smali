@@ -1,0 +1,13 @@
+.class public final Lrl/g;
+.super LG8/b;
+.source "SourceFile"
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "Rgb2YuvRendererAttribute:  mSourceSize: null mSampleRect: null mDestSize: null mDrawRect: null"
+
+    return-object p0
+.end method

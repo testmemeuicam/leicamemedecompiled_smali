@@ -1,0 +1,109 @@
+.class public final Ls5/v;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final synthetic b:Ljava/util/List;
+
+.field public final synthetic c:Landroidx/fragment/app/k;
+
+.field public final synthetic d:I
+
+.field public final synthetic e:Ls5/w;
+
+
+# direct methods
+.method public constructor <init>(Ls5/w;Ljava/util/List;Landroidx/fragment/app/k;I)V
+    .locals 0
+
+    iput-object p1, p0, Ls5/v;->e:Ls5/w;
+
+    iput-object p2, p0, Ls5/v;->b:Ljava/util/List;
+
+    iput-object p3, p0, Ls5/v;->c:Landroidx/fragment/app/k;
+
+    iput p4, p0, Ls5/v;->d:I
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    iput-object p1, p0, Ls5/v;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    iget-object p0, p0, Ls5/v;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 3
+
+    iget-object p1, p0, Ls5/v;->b:Ljava/util/List;
+
+    invoke-interface {p1}, Ljava/util/Collection;->stream()Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    new-instance v0, Ls5/u;
+
+    iget-object v1, p0, Ls5/v;->c:Landroidx/fragment/app/k;
+
+    invoke-direct {v0, p0, v1}, Ls5/u;-><init>(Ls5/v;Landroidx/fragment/app/k;)V
+
+    invoke-interface {p1, v0}, Ljava/util/stream/Stream;->map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    new-instance v0, LC2/M;
+
+    const/4 v1, 0x5
+
+    invoke-direct {v0, v1}, LC2/M;-><init>(I)V
+
+    invoke-interface {p1, v0}, Ljava/util/stream/Stream;->filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    new-instance v0, Lh5/d;
+
+    iget v1, p0, Ls5/v;->d:I
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, p0, v1, v2}, Lh5/d;-><init>(Ljava/lang/Object;II)V
+
+    invoke-interface {p1, v0}, Ljava/util/stream/Stream;->forEach(Ljava/util/function/Consumer;)V
+
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    iget-object p0, p0, Ls5/v;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    return-void
+.end method

@@ -1,0 +1,87 @@
+.class public final Lmn/p;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lmn/h;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lmn/h<",
+        "TR;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lmn/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lmn/h<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:LWl/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LWl/l<",
+            "TT;TR;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lmn/h;LWl/l;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lmn/h<",
+            "+TT;>;",
+            "LWl/l<",
+            "-TT;+TR;>;)V"
+        }
+    .end annotation
+
+    const-string v0, "transformer"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lmn/p;->a:Lmn/h;
+
+    iput-object p2, p0, Lmn/p;->b:LWl/l;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "TR;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lmn/p$a;
+
+    invoke-direct {v0, p0}, Lmn/p$a;-><init>(Lmn/p;)V
+
+    return-object v0
+.end method

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bj9">318.97656dp</dimen>
+    <dimen name="bj_">111.099976dp</dimen>
+    <dimen name="bjd">241.5dp</dimen>
+    <dimen name="bjh">277.9375dp</dimen>
+    <dimen name="bjl">111.099976dp</dimen>
+    <dimen name="bjm">166.29999dp</dimen>
+    <dimen name="bsv">40.0dp</dimen>
+    <dimen name="c90">58.22998dp</dimen>
+    <dimen name="cxc">30.0dp</dimen>
+    <dimen name="cyd">20.0dp</dimen>
+    <dimen name="cyl">53.359985dp</dimen>
+    <dimen name="d01">20.0dp</dimen>
+    <dimen name="d0e">355.0dp</dimen>
+</resources>

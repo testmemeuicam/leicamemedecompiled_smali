@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ej6">
+        <item quantity="one">Fokuserad. %d ansikte detekterat</item>
+        <item quantity="other">Fokuserad. %d ansikten detekterade</item>
+    </plurals>
+    <plurals name="ej7">
+        <item quantity="one">%d foto i en fotoserie</item>
+        <item quantity="other">%d foton i en fotoserie</item>
+    </plurals>
+    <plurals name="ej8">
+        <item quantity="one">Intervall: %d sekund</item>
+        <item quantity="other">Intervall: %d sekunder</item>
+    </plurals>
+    <plurals name="ej9">
+        <item quantity="one">Varaktighet: %d minut</item>
+        <item quantity="other">Varaktighet: %d minuter</item>
+    </plurals>
+    <plurals name="ej_">
+        <item quantity="one">Hastighet: %dX</item>
+        <item quantity="other">Hastighet: %dX</item>
+    </plurals>
+    <plurals name="eja">
+        <item quantity="one">Varaktighet: %d sekund</item>
+        <item quantity="other">Varaktighet: %d sekunder</item>
+    </plurals>
+    <plurals name="ejb">
+        <item quantity="one">Angav %d tecken.</item>
+        <item quantity="other">Angav %d tecken.</item>
+    </plurals>
+    <plurals name="ejc">
+        <item quantity="one">Ange upp till %d tecken.</item>
+        <item quantity="other">Ange upp till %d tecken.</item>
+    </plurals>
+    <plurals name="ejd">
+        <item quantity="one">Du kan ansluta upp till %d kamera till samma nätverk</item>
+        <item quantity="other">Du kan ansluta upp till %d kameror till samma nätverk</item>
+    </plurals>
+    <plurals name="eje">
+        <item quantity="one">Du kan ansluta upp till %d monitor till samma nätverk</item>
+        <item quantity="other">Du kan ansluta upp till %d skärmar till samma nätverk</item>
+    </plurals>
+    <plurals name="ejf">
+        <item quantity="one">Du kan skapa upp till %d klon åt gången.</item>
+        <item quantity="other">Du kan skapa upp till %d kloner åt gången.</item>
+    </plurals>
+    <plurals name="ejg">
+        <item quantity="one"><Data>Det går inte att ansluta till kameran.&lt;br>Denna app kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Efter detta, vänta en minut eller två och försök igen.</Data></item>
+        <item quantity="other"><Data>Det går inte att ansluta till kameran.&lt;br>Denna app kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sekunder&lt;/b>&lt;/font>. Efter detta, vänta en minut eller två och försök igen.</Data></item>
+    </plurals>
+    <plurals name="ejh">
+        <item quantity="one"><Data>Denna enhet är för varm nu.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sekund&lt;/b>&lt;/font>. Aktuellt förlopp sparades automatiskt.</Data></item>
+        <item quantity="other"><Data>Denna enhet är för varm nu.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sekunder&lt;/b>&lt;/font>. Aktuellt förlopp sparades automatiskt.</Data></item>
+    </plurals>
+    <plurals name="eji">
+        <item quantity="one"><Data>Kameraversionen dom du använder är inte kompatibel med din enhetsmodell.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstallera kamerauppdateringar och försök igen.</Data></item>
+        <item quantity="other"><Data>Kameraversionen dom du använder är inte kompatibel med din enhetsmodell.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstallera kamerauppdateringar och försök igen.</Data></item>
+    </plurals>
+    <plurals name="ejj">
+        <item quantity="one">%1$d min</item>
+        <item quantity="other">%1$d min</item>
+    </plurals>
+    <plurals name="ejk">
+        <item quantity="one">%1$d sek</item>
+        <item quantity="other">%1$d sek</item>
+    </plurals>
+    <plurals name="ejl">
+        <item quantity="one">Aktiverade timer (%1$d sekund). Foton kommer att överföras till den här enheten.</item>
+        <item quantity="other">Aktiverade timer (%1$d sekunder). Foton kommer att överföras till den här enheten.</item>
+    </plurals>
+    <plurals name="ejm">
+        <item quantity="one">Ta bort %1$d utkast?</item>
+        <item quantity="other">Ta bort %1$d utkast?</item>
+    </plurals>
+    <plurals name="ejn">
+        <item quantity="one">Lägg till %d förinställning</item>
+        <item quantity="other">Lägg till %d förinställningar</item>
+    </plurals>
+    <plurals name="ejo">
+        <item quantity="one">Radera %d förinställning nu?</item>
+        <item quantity="other">Radera %d för inställningar nu?</item>
+    </plurals>
+    <plurals name="ejp">
+        <item quantity="one">Radera %d förinställning</item>
+        <item quantity="other">Radera %d förinställningar</item>
+    </plurals>
+    <plurals name="ejq">
+        <item quantity="one">Importerad %d förinställning</item>
+        <item quantity="other">Importerade %d förinställningar</item>
+    </plurals>
+    <plurals name="ejr">
+        <item quantity="one">%d ny avisering</item>
+        <item quantity="other">%d nya aviseringar</item>
+    </plurals>
+    <plurals name="ejs">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="ejt">
+        <item quantity="one">%1$s minut</item>
+        <item quantity="other">%1$s minuter</item>
+    </plurals>
+    <plurals name="eju">
+        <item quantity="one">Spela in %d sekund</item>
+        <item quantity="other">Spela in %d sekunder</item>
+    </plurals>
+    <plurals name="ejv">
+        <item quantity="one">Du kan bara filma tidsfrysningsvideor med %d motiv.</item>
+        <item quantity="other">Du kan filma tidsfrysningsvideor med upp till %d motiv.</item>
+    </plurals>
+    <plurals name="ejw">
+        <item quantity="one">%1$s foto</item>
+        <item quantity="other">%1$s foton</item>
+    </plurals>
+</resources>

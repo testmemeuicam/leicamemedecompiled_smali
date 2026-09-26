@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cbj">300.0dp</dimen>
+    <dimen name="cbk">300.0dp</dimen>
+    <dimen name="cdu">80.0dp</dimen>
+    <dimen name="cdv">94.0dp</dimen>
+    <dimen name="cdz">8.0sp</dimen>
+    <dimen name="ce2">8.0sp</dimen>
+    <dimen name="cm5">4.5dp</dimen>
+</resources>

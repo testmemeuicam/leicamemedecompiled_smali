@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="b8b">48.0dp</dimen>
+    <dimen name="ca8">450.0dp</dimen>
+    <dimen name="ca9">600.0dp</dimen>
+    <dimen name="cc4">10.0dp</dimen>
+    <dimen name="cc5">10.0dp</dimen>
+    <dimen name="cs3">24.0dp</dimen>
+    <dimen name="cs6">24.0dp</dimen>
+    <dimen name="cta">20.0dp</dimen>
+    <dimen name="ctc">4.0dp</dimen>
+    <dimen name="ctg">96.0dp</dimen>
+    <dimen name="ctj">0.0dp</dimen>
+    <dimen name="ctk">0.0dp</dimen>
+    <dimen name="ctl">104.0dp</dimen>
+    <dimen name="cts">68.0dp</dimen>
+    <dimen name="ctt">64.0dp</dimen>
+    <dimen name="ctu">24.0dp</dimen>
+    <dimen name="ctv">32.0dp</dimen>
+</resources>

@@ -1,0 +1,34 @@
+.class public interface abstract Lrn/x;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract e(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract f(LLl/e;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract h()Z
+.end method
+
+.method public abstract l(Lrn/r;)V
+.end method

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="beg">5.0dp</dimen>
+    <dimen name="beh">32.0dp</dimen>
+    <dimen name="bjz">0.0dp</dimen>
+    <dimen name="d8v">66.0dp</dimen>
+    <dimen name="d8z">-7.799988dp</dimen>
+    <dimen name="d92">112.0dp</dimen>
+    <dimen name="d9g">28.5dp</dimen>
+    <dimen name="ddy">189.0dp</dimen>
+    <dimen name="ddz">130.0dp</dimen>
+    <dimen name="de8">20.0dp</dimen>
+    <dimen name="de9">118.0dp</dimen>
+    <dimen name="dnx">192.0dp</dimen>
+    <dimen name="doy">19.0dp</dimen>
+    <dimen name="dp0">14.0dp</dimen>
+    <dimen name="dp1">225.0dp</dimen>
+    <dimen name="dp2">120.0dp</dimen>
+    <dimen name="dp3">152.0dp</dimen>
+    <dimen name="dp8">8.0dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+.class public final Lyn/j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:I
+
+.field public static final b:LBc/d;
+
+.field public static final c:LBc/d;
+
+.field public static final d:LBc/d;
+
+.field public static final e:LBc/d;
+
+.field public static final f:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 5
+
+    const-string v0, "kotlinx.coroutines.semaphore.maxSpinCycles"
+
+    const/16 v1, 0x64
+
+    const/4 v2, 0x0
+
+    const/16 v3, 0xc
+
+    invoke-static {v0, v1, v2, v2, v3}, LEe/D4;->z(Ljava/lang/String;IIII)I
+
+    move-result v0
+
+    sput v0, Lyn/j;->a:I
+
+    new-instance v0, LBc/d;
+
+    const-string v1, "PERMIT"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v0, v1, v4}, LBc/d;-><init>(Ljava/lang/Object;I)V
+
+    sput-object v0, Lyn/j;->b:LBc/d;
+
+    new-instance v0, LBc/d;
+
+    const-string v1, "TAKEN"
+
+    invoke-direct {v0, v1, v4}, LBc/d;-><init>(Ljava/lang/Object;I)V
+
+    sput-object v0, Lyn/j;->c:LBc/d;
+
+    new-instance v0, LBc/d;
+
+    const-string v1, "BROKEN"
+
+    invoke-direct {v0, v1, v4}, LBc/d;-><init>(Ljava/lang/Object;I)V
+
+    sput-object v0, Lyn/j;->d:LBc/d;
+
+    new-instance v0, LBc/d;
+
+    const-string v1, "CANCELLED"
+
+    invoke-direct {v0, v1, v4}, LBc/d;-><init>(Ljava/lang/Object;I)V
+
+    sput-object v0, Lyn/j;->e:LBc/d;
+
+    const-string v0, "kotlinx.coroutines.semaphore.segmentSize"
+
+    const/16 v1, 0x10
+
+    invoke-static {v0, v1, v2, v2, v3}, LEe/D4;->z(Ljava/lang/String;IIII)I
+
+    move-result v0
+
+    sput v0, Lyn/j;->f:I
+
+    return-void
+.end method

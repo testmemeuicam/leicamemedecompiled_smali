@@ -2591,7 +2591,7 @@
 
     iget v0, p0, LY3/j;->n:F
 
-    invoke-static {v0, p1}, Lxi/g;->i(FF)Landroid/animation/ValueAnimator;
+    invoke-static {v0, p1}, Lxi/g;->iS(FF)Landroid/animation/ValueAnimator;
 
     move-result-object v0
 

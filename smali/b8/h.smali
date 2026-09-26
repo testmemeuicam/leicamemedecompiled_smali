@@ -5119,6 +5119,50 @@
 .end method
 
 .method public l0(FI)Z
+    .locals 5
+
+    # Smooth-zoom-transition dispatcher.
+    #   - if the feature is off, or we are re-entering from our own animator,
+    #     or the target value is NaN -> apply instantly (original behaviour).
+    #   - otherwise kick off / update an exponential-smoothing animator and
+    #     return true (the animator will drive l0_impl()).
+    invoke-static {}, Lcom/android/camera/zoom/SmoothZoomHelper;->isEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_smooth_zoom
+
+    invoke-static {p0}, Lcom/android/camera/zoom/SmoothZoomHelper;->isInCallback(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_smooth_zoom
+
+    invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_smooth_zoom
+
+    invoke-static {p0, p1, p2}, Lcom/android/camera/zoom/SmoothZoomHelper;->smooth(Lb8/h;FI)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_smooth_zoom
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_smooth_zoom
+    invoke-virtual {p0, p1, p2}, Lb8/h;->l0_impl(FI)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public l0_impl(FI)Z
     .locals 17
 
     move-object/from16 v0, p0

@@ -840,6 +840,61 @@
     invoke-virtual {p0, v0, v3, v1, v4}, Lt4/b;->nd(Landroidx/preference/PreferenceGroup;Ljava/lang/String;ZI)Landroidx/preference/CheckBoxPreference;
 
     :cond_5
+    # >>> Smooth zoom transition (added)
+    # Inline equivalent of t4/b.nd(), but with a literal title string.
+    # nd() calls Preference.V(I) (setTitle by *resource id*) unconditionally
+    # with no guard, so passing -1 throws Resources$NotFoundException
+    # ("String resource ID #0xffffffff"). This build has no
+    # setTitle(CharSequence), only W(String), which we use instead.
+    # v4..v8 keep v0 (category) and v2 (summary-res -1) intact for the
+    # pref_other_setting row below.
+    new-instance v4, Landroidx/preference/CheckBoxPreference;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/k;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    invoke-direct {v4, v5, v6}, Landroidx/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    const-string v5, "pref_camera_smooth_zoom_key"
+
+    invoke-virtual {v4, v5}, Landroidx/preference/Preference;->S(Ljava/lang/String;)V
+
+    const-string v5, "Smooth zoom transition"
+
+    invoke-virtual {v4, v5}, Landroidx/preference/Preference;->W(Ljava/lang/String;)V
+
+    const-string v5, "Ease-out curve instead of instant snappy zoom"
+
+    invoke-virtual {v4, v5}, Landroidx/preference/Preference;->U(Ljava/lang/CharSequence;)V
+
+    # defaultValue = Boolean.FALSE; valueOf(Z) takes one register, so pass
+    # an explicit 0 -- "invoke-static {}" fails the ART verifier here.
+    const/4 v5, 0x0
+
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    iput-object v5, v4, Landroidx/preference/Preference;->Y:Ljava/lang/Object;
+
+    # setPersistent(false)
+    const/4 v5, 0x0
+
+    iput-boolean v5, v4, Landroidx/preference/Preference;->s:Z
+
+    # addPreference
+    invoke-virtual {v0, v4}, Landroidx/preference/PreferenceGroup;->b0(Landroidx/preference/Preference;)Z
+
+    invoke-static {}, Lcom/android/camera/zoom/SmoothZoomHelper;->isEnabled()Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Landroidx/preference/TwoStatePreference;->setChecked(Z)V
+    # <<< Smooth zoom transition (added)
+
     const-string v1, "pref_other_setting"
 
     const v3, 0x7f140eed

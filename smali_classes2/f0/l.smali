@@ -1,0 +1,19 @@
+.class public final synthetic Lf0/l;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/function/ToIntFunction;
+
+
+# virtual methods
+.method public final applyAsInt(Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
+.end method

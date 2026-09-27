@@ -1,0 +1,49 @@
+.class public final LQf/I$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LQf/I;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# static fields
+.field public static final synthetic a:LQf/I$a;
+
+.field public static final b:LMa/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LMa/a;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, LQf/I$a;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, LQf/I$a;->a:LQf/I$a;
+
+    new-instance v0, LMa/a;
+
+    const-string v1, "PackageViewDescriptorFactory"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, LMa/a;-><init>(Ljava/lang/Object;I)V
+
+    sput-object v0, LQf/I$a;->b:LMa/a;
+
+    return-void
+.end method

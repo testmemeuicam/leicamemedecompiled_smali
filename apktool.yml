@@ -1,0 +1,43 @@
+version: 3.0.3
+apkFileName: MiuiCamera.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 29
+  targetSdkVersion: 35
+versionInfo:
+  versionCode: 740002503
+  versionName: Dyper_Cam
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- mp3
+- mp4
+- ogg
+- png
+- so
+- webp
+- assets/cg/test1.zip
+- assets/cg/test2.zip
+- assets/cg/test3.zip
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/live/mi_music_cn.zip
+- assets/live/mi_music_global.zip
+- assets/obfu_res/res/drawable/ic_cv_logo.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_1_mm.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_1_top_mm.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_2_mm.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_2_top_mm.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_master.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_master_top_menu.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_other.xml
+- assets/obfu_res/res/drawable/ic_cvtype_item_other_top_menu.xml
+- assets/obfu_res/res/drawable/ic_west_coast_icon.xml
+- assets/obfu_res/res/drawable/ic_west_coast_icon_princess.xml
+- assets/obfu_res/res/drawable/ic_west_coast_icon_queen.xml
+- assets/obfu_res/res/drawable/polaroid_print_btn.xml
+- assets/vp/huaijiu.zip

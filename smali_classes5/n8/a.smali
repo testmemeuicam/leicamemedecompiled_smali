@@ -1,0 +1,15 @@
+.class public abstract Ln8/a;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a()I
+.end method
+
+.method public abstract b(Lf8/b$c;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method

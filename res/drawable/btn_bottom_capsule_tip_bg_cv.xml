@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/bg6" />
+    <padding android:left="@dimen/bg9" android:top="@dimen/bg4" android:right="@dimen/bga" android:bottom="@dimen/bg4" />
+    <stroke android:width="@dimen/bg7" android:color="@color/bottom_tip_bg_cv" />
+</shape>

@@ -1,0 +1,10 @@
+.class public interface abstract Lr2/b;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a(ILjava/lang/String;)V
+.end method
+
+.method public abstract s()Z
+.end method

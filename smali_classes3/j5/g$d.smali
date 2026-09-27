@@ -1,0 +1,58 @@
+.class public final Lj5/g$d;
+.super Landroid/animation/AnimatorListenerAdapter;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lj5/g;->j()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lj5/g;
+
+
+# direct methods
+.method public constructor <init>(Lj5/g;)V
+    .locals 0
+
+    iput-object p1, p0, Lj5/g$d;->a:Lj5/g;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 0
+
+    iget-object p0, p0, Lj5/g$d;->a:Lj5/g;
+
+    iget-object p1, p0, Lj5/g;->j:Landroid/animation/ValueAnimator;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->cancel()V
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lj5/g;->j:Landroid/animation/ValueAnimator;
+
+    :cond_0
+    invoke-virtual {p0}, Lj5/g;->c()V
+
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    return-void
+.end method

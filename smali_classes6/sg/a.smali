@@ -1,0 +1,46 @@
+.class public abstract Lsg/a;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Comparable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/lang/Comparable<",
+        "Lsg/a;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final compareTo(Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Lsg/a;
+
+    const-string p0, "other"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p0, Lsg/b;->a:Lsg/b;
+
+    invoke-virtual {p0, p0}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
+
+    move-result p0
+
+    return p0
+.end method

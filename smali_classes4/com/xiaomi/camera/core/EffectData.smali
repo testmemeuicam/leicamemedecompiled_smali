@@ -1,0 +1,77 @@
+.class public Lcom/xiaomi/camera/core/EffectData;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+
+# instance fields
+.field private effectRectAttribute:LQ0/c;
+
+.field private hasEffect:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/xiaomi/camera/core/EffectData;->hasEffect:Z
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/xiaomi/camera/core/EffectData;->effectRectAttribute:LQ0/c;
+
+    return-void
+.end method
+
+.method public constructor <init>(ZLQ0/c;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Lcom/xiaomi/camera/core/EffectData;->hasEffect:Z
+
+    iput-object p2, p0, Lcom/xiaomi/camera/core/EffectData;->effectRectAttribute:LQ0/c;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getEffectRectAttribute()LQ0/c;
+    .locals 0
+
+    iget-object p0, p0, Lcom/xiaomi/camera/core/EffectData;->effectRectAttribute:LQ0/c;
+
+    return-object p0
+.end method
+
+.method public isHasEffect()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/xiaomi/camera/core/EffectData;->hasEffect:Z
+
+    return p0
+.end method
+
+.method public setEffectRectAttribute(LQ0/c;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/xiaomi/camera/core/EffectData;->effectRectAttribute:LQ0/c;
+
+    return-void
+.end method
+
+.method public setHasEffect(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/xiaomi/camera/core/EffectData;->hasEffect:Z
+
+    return-void
+.end method

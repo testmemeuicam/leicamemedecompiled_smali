@@ -1,0 +1,17 @@
+.class public final synthetic Lcom/android/camera2/compat/theme/custom/mm/manually/l;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, LW3/d0;
+
+    invoke-static {p1}, Lcom/android/camera2/compat/theme/custom/mm/manually/BaseWorkspaceFragment$11;->a(LW3/d0;)V
+
+    return-void
+.end method

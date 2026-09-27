@@ -1,0 +1,16 @@
+.class public final Ltf/b;
+.super Ljava/io/ByteArrayOutputStream;
+
+
+# virtual methods
+.method public final a()[B
+    .locals 1
+
+    iget-object p0, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
+
+    const-string v0, "buf"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/k;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method

@@ -1,0 +1,10 @@
+.class public interface abstract LC5/a;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract c(ILandroid/view/View;)V
+.end method
+
+.method public abstract e(Landroid/view/View;)I
+.end method

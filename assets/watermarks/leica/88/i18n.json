@@ -1,0 +1,10 @@
+{
+  "wm_leica_88": {
+    "zh-rCN": "徕卡88",
+    "default": "徕卡88"
+  },
+  "wm_time_yyyy_MM_dd_HH_mm": {
+    "default": "yyyy.MM.dd HH:mm",
+    "zh-rCN": "yyyy.MM.dd HH:mm"
+  }
+}

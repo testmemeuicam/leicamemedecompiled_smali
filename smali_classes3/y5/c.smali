@@ -1,0 +1,18 @@
+.class public interface abstract Ly5/c;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract c()V
+.end method

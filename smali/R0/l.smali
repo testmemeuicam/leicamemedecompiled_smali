@@ -1,0 +1,24 @@
+.class public final LR0/l;
+.super LR0/b;
+
+
+# instance fields
+.field public b:F
+
+.field public c:F
+
+.field public d:F
+
+.field public e:F
+
+.field public f:Lq6/h;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, LR0/b;-><init>()V
+
+    return-void
+.end method

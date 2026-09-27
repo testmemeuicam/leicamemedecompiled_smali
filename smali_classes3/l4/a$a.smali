@@ -1,0 +1,22 @@
+.class public final Ll4/a$a;
+.super Ljava/util/HashMap;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ll4/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/HashMap<",
+        "Ljava/lang/String;",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation

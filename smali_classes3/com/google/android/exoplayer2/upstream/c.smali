@@ -1,0 +1,19 @@
+.class public final synthetic Lcom/google/android/exoplayer2/upstream/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/common/base/Predicate;
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Z
+    .locals 0
+
+    check-cast p1, Ljava/lang/String;
+
+    invoke-static {p1}, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$NullFilteringHeadersMap;->b(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method

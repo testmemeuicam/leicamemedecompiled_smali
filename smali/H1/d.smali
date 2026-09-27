@@ -1,0 +1,15 @@
+.class public final synthetic LH1/d;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
+
+
+# virtual methods
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method

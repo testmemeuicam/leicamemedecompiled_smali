@@ -1,0 +1,9 @@
+{
+  "wm_leica_89": {
+    "zh-rCN": "徕卡89",
+    "default": "徕卡89"
+  },
+  "wm_time_yyyy_MM_dd_HH_mm": {
+    "default": "MM/dd/yyyy HH:mm"
+  }
+}

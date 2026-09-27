@@ -1,0 +1,13 @@
+.class public final synthetic Lf5/b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
+
+
+# virtual methods
+.method public final onAudioFocusChange(I)V
+    .locals 0
+
+    return-void
+.end method

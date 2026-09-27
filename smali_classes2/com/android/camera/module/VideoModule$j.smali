@@ -1,0 +1,13 @@
+.class public final Lcom/android/camera/module/VideoModule$j;
+.super LQ/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/camera/module/VideoModule;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "j"
+.end annotation

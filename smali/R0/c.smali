@@ -1,0 +1,50 @@
+.class public LR0/c;
+.super LR0/n;
+
+
+# instance fields
+.field public c:Lq6/b;
+
+.field public d:Z
+
+.field public e:[F
+
+.field public f:I
+
+.field public g:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, LR0/n;-><init>()V
+
+    const/4 v0, 0x5
+
+    iput v0, p0, LR0/b;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>(Lq6/b;Landroid/graphics/Rect;)V
+    .locals 1
+
+    invoke-direct {p0}, LR0/n;-><init>()V
+
+    iget-object v0, p0, LR0/n;->b:Landroid/graphics/Rect;
+
+    invoke-virtual {v0, p2}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
+
+    iput-object p1, p0, LR0/c;->c:Lq6/b;
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, LR0/c;->d:Z
+
+    const/4 p1, 0x5
+
+    iput p1, p0, LR0/b;->a:I
+
+    return-void
+.end method

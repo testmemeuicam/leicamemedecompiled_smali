@@ -1,0 +1,10 @@
+.class public interface abstract Lyi/f;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a(Lmiuix/preference/BaseCheckBoxPreference;Ljava/lang/Object;)Z
+.end method
+
+.method public abstract b(Lmiuix/preference/BaseCheckBoxPreference;)V
+.end method

@@ -1,0 +1,135 @@
+.class public LDg/g0;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        LDg/g0$a;,
+        LDg/g0$b;
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Z
+
+.field public final b:Z
+
+.field public final c:LEg/b;
+
+.field public final d:LEg/e;
+
+.field public final e:LEg/g;
+
+.field public f:I
+
+.field public g:Ljava/util/ArrayDeque;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayDeque<",
+            "LGg/h;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public h:LMg/d;
+
+
+# direct methods
+.method public constructor <init>(ZZLEg/b;LEg/e;LEg/g;)V
+    .locals 1
+
+    const-string v0, "typeSystemContext"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "kotlinTypePreparator"
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "kotlinTypeRefiner"
+
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, LDg/g0;->a:Z
+
+    iput-boolean p2, p0, LDg/g0;->b:Z
+
+    iput-object p3, p0, LDg/g0;->c:LEg/b;
+
+    iput-object p4, p0, LDg/g0;->d:LEg/e;
+
+    iput-object p5, p0, LDg/g0;->e:LEg/g;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    iget-object v0, p0, LDg/g0;->g:Ljava/util/ArrayDeque;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/k;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Ljava/util/ArrayDeque;->clear()V
+
+    iget-object p0, p0, LDg/g0;->h:LMg/d;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/k;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {p0}, LMg/d;->clear()V
+
+    return-void
+.end method
+
+.method public final b()V
+    .locals 2
+
+    iget-object v0, p0, LDg/g0;->g:Ljava/util/ArrayDeque;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Ljava/util/ArrayDeque;
+
+    const/4 v1, 0x4
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayDeque;-><init>(I)V
+
+    iput-object v0, p0, LDg/g0;->g:Ljava/util/ArrayDeque;
+
+    :cond_0
+    iget-object v0, p0, LDg/g0;->h:LMg/d;
+
+    if-nez v0, :cond_1
+
+    new-instance v0, LMg/d;
+
+    invoke-direct {v0}, LMg/d;-><init>()V
+
+    iput-object v0, p0, LDg/g0;->h:LMg/d;
+
+    :cond_1
+    return-void
+.end method
+
+.method public final c(LGg/g;)LGg/g;
+    .locals 1
+
+    const-string v0, "type"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p0, p0, LDg/g0;->d:LEg/e;
+
+    invoke-virtual {p0, p1}, LEg/e;->C(LGg/g;)LDg/z0;
+
+    move-result-object p0
+
+    return-object p0
+.end method

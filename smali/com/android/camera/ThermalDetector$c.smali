@@ -1,0 +1,18 @@
+.class public interface abstract Lcom/android/camera/ThermalDetector$c;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/camera/ThermalDetector;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "c"
+.end annotation
+
+
+# virtual methods
+.method public abstract h0(I)V
+.end method

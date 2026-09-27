@@ -1,0 +1,100 @@
+.class public final LHf/n$a$n;
+.super Lkotlin/jvm/internal/m;
+
+# interfaces
+.implements Lxf/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LHf/n$a;-><init>(LHf/n;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/m;",
+        "Lxf/a<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:LHf/n;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LHf/n<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(LHf/n;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LHf/n<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, LHf/n$a$n;->a:LHf/n;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/m;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    iget-object p0, p0, LHf/n$a$n;->a:LHf/n;
+
+    iget-object v0, p0, LHf/n;->b:Ljava/lang/Class;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->isAnonymousClass()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, LHf/n;->v()Lmg/b;
+
+    move-result-object p0
+
+    iget-boolean v0, p0, Lmg/b;->c:Z
+
+    if-eqz v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p0}, Lmg/b;->b()Lmg/c;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lmg/c;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_0
+    return-object v1
+.end method

@@ -1,0 +1,35 @@
+.class public final LC7/g$b$d;
+.super LC7/g$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LC7/g$b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "d"
+.end annotation
+
+
+# static fields
+.field public static final c:LC7/g$b$d;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, LC7/g$b$d;
+
+    const/4 v1, 0x2
+
+    const/16 v2, 0x9
+
+    invoke-direct {v0, v1, v2}, LC7/g$b;-><init>(II)V
+
+    sput-object v0, LC7/g$b$d;->c:LC7/g$b$d;
+
+    return-void
+.end method

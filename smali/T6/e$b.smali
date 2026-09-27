@@ -1,0 +1,16 @@
+.class public LT6/e$b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LT6/e;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation

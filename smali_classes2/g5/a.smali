@@ -1,0 +1,10 @@
+.class public interface abstract Lg5/a;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a(II)V
+.end method
+
+.method public abstract b(I)V
+.end method

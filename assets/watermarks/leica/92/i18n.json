@@ -1,0 +1,10 @@
+{
+  "wm_leica_92": {
+    "default": "徕卡92",
+    "zh-rCN": "徕卡92"
+  },
+  "wm_time_yyyy_MM_dd_HH_mm": {
+    "default": "yyyy.MM.dd HH:mm",
+    "zh-rCN": "yyyy.MM.dd HH:mm"
+  }
+}

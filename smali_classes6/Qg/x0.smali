@@ -1,0 +1,21 @@
+.class public final LQg/x0;
+.super LVg/l;
+
+# interfaces
+.implements LQg/j0;
+
+
+# virtual methods
+.method public final getList()LQg/x0;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public final isActive()Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method

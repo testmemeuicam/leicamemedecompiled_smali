@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hs2" parent="@style/hod">
+        <item name="android:textAppearance">@style/hcz</item>
+        <item name="android:textColor">?xz</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@string/g40</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+.class public interface abstract LB/j3;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract getItemTag()Ljava/lang/String;
+.end method
+
+.method public abstract onProcessChanged(I)V
+.end method
+
+.method public abstract updateProcessColor(I)V
+.end method

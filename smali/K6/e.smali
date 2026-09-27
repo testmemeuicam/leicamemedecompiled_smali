@@ -1,0 +1,42 @@
+.class public final LK6/e;
+.super LK6/j;
+
+
+# instance fields
+.field public final transient b:LK6/f;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;LK6/f;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2, v0}, LK6/e;-><init>(Ljava/lang/String;LK6/f;I)V
+
+    iput-object p2, p0, LK6/e;->b:LK6/f;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;LK6/f;I)V
+    .locals 0
+
+    const/4 p3, 0x0
+
+    invoke-direct {p0, p1, p3, p3}, LK6/j;-><init>(Ljava/lang/String;LK6/g;Ljava/lang/Throwable;)V
+
+    iput-object p2, p0, LK6/e;->b:LK6/f;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c()Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, LK6/e;->b:LK6/f;
+
+    return-object p0
+.end method

@@ -1,0 +1,37 @@
+.class public final Lj4/d;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lg3/b$a;
+
+
+# instance fields
+.field public final synthetic a:Lcom/android/camera/shutterstyle/ShutterStyleFragment;
+
+
+# direct methods
+.method public constructor <init>(Lcom/android/camera/shutterstyle/ShutterStyleFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj4/d;->a:Lcom/android/camera/shutterstyle/ShutterStyleFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/net/Uri;)V
+    .locals 1
+
+    iget-object p0, p0, Lj4/d;->a:Lcom/android/camera/shutterstyle/ShutterStyleFragment;
+
+    iget-object v0, p0, Lcom/android/camera/shutterstyle/ShutterStyleFragment;->d:Lcom/android/camera/shutterstyle/CustomShutterAdapter;
+
+    invoke-virtual {v0, p1}, Lcom/android/camera/shutterstyle/CustomShutterAdapter;->g(Landroid/net/Uri;)V
+
+    invoke-virtual {p0}, Lcom/android/camera/shutterstyle/ShutterStyleFragment;->pc()V
+
+    return-void
+.end method

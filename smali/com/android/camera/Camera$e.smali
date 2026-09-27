@@ -1,0 +1,144 @@
+.class public final Lcom/android/camera/Camera$e;
+.super Landroid/content/BroadcastReceiver;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/camera/Camera;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/android/camera/Camera;
+
+
+# direct methods
+.method public constructor <init>(Lcom/android/camera/Camera;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 3
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "android.media.action.VOICE_COMMAND"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-virtual {v0}, Lcom/android/camera/ActivityBase;->pc()Lac/h;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lac/h;->a:Landroid/content/Intent;
+
+    invoke-static {v0}, Lac/h;->g(Landroid/content/Intent;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "QUERY_CAMERA_STATUS"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {}, La0/a;->g()Lf0/n;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lf0/n;->z()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/android/camera/data/data/h;->p0()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    invoke-static {}, La0/a;->g()Lf0/n;
+
+    move-result-object v1
+
+    iget v2, v1, Lf0/n;->s:I
+
+    invoke-virtual {v1, v2}, Lf0/n;->B(I)I
+
+    move-result v1
+
+    iget-object v2, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-virtual {v2}, Lcom/android/camera/Camera;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Lac/e;->v(ILandroid/content/Context;I)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-virtual {v0}, Lcom/android/camera/ActivityBase;->mj()Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;->i:Lcom/android/camera/module/J;
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-virtual {v0}, Lcom/android/camera/ActivityBase;->mj()Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;->i:Lcom/android/camera/module/J;
+
+    invoke-interface {v0}, Lcom/android/camera/module/J;->getModuleState()Lt3/f;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lt3/f;->isDeparted()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iget-object p0, p0, Lcom/android/camera/Camera$e;->a:Lcom/android/camera/Camera;
+
+    invoke-virtual {p0}, Lcom/android/camera/ActivityBase;->mj()Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/xiaomi/camera/base/viewmodels/CameraMainViewModel;->i:Lcom/android/camera/module/J;
+
+    invoke-interface {p0, p1, p2}, Lcom/android/camera/module/J;->onBroadcastReceived(Landroid/content/Context;Landroid/content/Intent;)V
+
+    :cond_2
+    return-void
+.end method

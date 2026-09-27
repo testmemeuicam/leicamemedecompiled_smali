@@ -1,0 +1,13 @@
+.class public interface abstract Lf9/a;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a([B)Z
+.end method
+
+.method public abstract init()Z
+.end method
+
+.method public abstract release()V
+.end method

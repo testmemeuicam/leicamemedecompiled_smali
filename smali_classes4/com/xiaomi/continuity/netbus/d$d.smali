@@ -1,0 +1,18 @@
+.class public interface abstract Lcom/xiaomi/continuity/netbus/d$d;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaomi/continuity/netbus/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "d"
+.end annotation
+
+
+# virtual methods
+.method public abstract c(Ljava/lang/Exception;)V
+.end method

@@ -1,0 +1,15 @@
+.class public final synthetic Lcom/android/camera2/compat/theme/custom/mm/cinemaster/p;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnCancelListener;
+
+
+# virtual methods
+.method public final onCancel(Landroid/content/DialogInterface;)V
+    .locals 0
+
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+
+    return-void
+.end method

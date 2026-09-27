@@ -1,0 +1,28 @@
+.class public final LR0/a;
+.super LR0/b;
+
+
+# instance fields
+.field public b:[F
+
+.field public c:I
+
+.field public d:I
+
+.field public e:Lef/b;
+
+.field public f:Landroid/util/Size;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, LR0/b;-><init>()V
+
+    const/16 v0, 0xb
+
+    iput v0, p0, LR0/b;->a:I
+
+    return-void
+.end method

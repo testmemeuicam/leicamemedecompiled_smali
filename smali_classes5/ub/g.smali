@@ -1,0 +1,93 @@
+.class public final synthetic Lub/g;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lub/f$f;
+
+.field public final synthetic b:Lsb/a;
+
+.field public final synthetic c:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lub/f$f;Lsb/a;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lub/g;->a:Lub/f$f;
+
+    iput-object p2, p0, Lub/g;->b:Lsb/a;
+
+    iput p3, p0, Lub/g;->c:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    iget-object v0, p0, Lub/g;->a:Lub/f$f;
+
+    iget-object v1, p0, Lub/g;->b:Lsb/a;
+
+    iget p0, p0, Lub/g;->c:I
+
+    iget-object v2, v0, Lub/f$f;->a:Lub/f;
+
+    iget-object v2, v2, Lub/f;->m:Ljava/util/LinkedList;
+
+    monitor-enter v2
+
+    :try_start_0
+    iget-object v0, v0, Lub/f$f;->a:Lub/f;
+
+    iget-object v0, v0, Lub/f;->m:Ljava/util/LinkedList;
+
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lub/h;
+
+    if-eqz v3, :cond_0
+
+    invoke-interface {v3, v1, p0}, Lub/h;->onEndpointFound(Lsb/a;I)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_1
+
+    :cond_1
+    monitor-exit v2
+
+    return-void
+
+    :goto_1
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method

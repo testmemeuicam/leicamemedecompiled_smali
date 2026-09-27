@@ -1309,4 +1309,5 @@
     <color name="zoom_slider_stop_color">#ffffffff</color>
     <color name="zoom_slider_stop_color_light">#ff262626</color>
     <color name="zoom_slider_stop_color_lite">#e6ffffff</color>
+    <color name="ej5_bg">#FFFFFF</color>
 </resources>

@@ -116,31 +116,7 @@
     goto/16 :goto_1
 
     :pswitch_3
-    new-instance p1, Lcom/android/camera/fragment/dialog/CameraExitHintDialogFragment;
-
-    invoke-direct {p1}, Lcom/android/camera/fragment/dialog/CameraExitHintDialogFragment;-><init>()V
-
-    const/4 v0, 0x4
-
-    iput v0, p1, Lcom/android/camera/fragment/dialog/CameraExitHintDialogFragment;->a:I
-
-    invoke-virtual {p1, v3, v1}, Landroidx/fragment/app/DialogFragment;->setStyle(II)V
-
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1, v2}, Landroidx/fragment/app/FragmentTransaction;->add(Landroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
-
-    const-string p0, "on APK version error, finish activity after 3 seconds"
+    const-string p0, "[ExitGateFix] suppressed APK-version exit gate (no CameraExitHint dialog)"
 
     new-array p1, v6, [Ljava/lang/Object;
 

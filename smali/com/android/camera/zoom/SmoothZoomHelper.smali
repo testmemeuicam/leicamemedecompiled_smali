@@ -126,7 +126,7 @@
 .method private static getDurationMs()F
     .locals 4
 
-    const/16 v0, 0xc8
+    const/16 v0, 0xfa
 
     :try_start_0
     invoke-static {}, La0/a;->g()Lf0/n;

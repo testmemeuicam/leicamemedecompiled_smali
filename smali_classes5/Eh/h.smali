@@ -776,7 +776,7 @@
 
     iget-boolean v7, v3, LEh/u;->y:Z
 
-    if-eqz v7, :cond_1c
+    goto :cond_1c
 
     iget v7, v3, LEh/u;->l:I
 
